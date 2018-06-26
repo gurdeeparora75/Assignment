@@ -24,14 +24,13 @@ public class LoginScreen extends BaseMethods {
 			baseClass.tearDown();
 			waitTime(3000);
 		}
-		waitTime(1000);
+		//waitTime(1000);
 		String image_Username= getImageByName("Username_textbox");
 		clearTextInTextField(image_Username);
-		waitTime(1000);
+		waitTime(500);
 		sendKeys(username);
 		
 		String image_Password= getImageByName("Password_textbox");
-		//waitTime(500);
 		pressTab();
 		clearTextInTextField(image_Password);
 		waitTime(1000);
@@ -42,9 +41,6 @@ public class LoginScreen extends BaseMethods {
 		click(image_loginbtn);
 	}
 
-	
-		
-	
 	
 }	
 	

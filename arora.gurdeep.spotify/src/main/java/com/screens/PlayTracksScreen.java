@@ -55,7 +55,7 @@ public class PlayTracksScreen extends BaseMethods {
 		click(playBtnImage);
 		waitTime(1000);
 		System.out.println("Song being played !!!");
-		waitTime(3000);
+		waitTime(5000);
 	}
 	
 	/* Method Parameters: None
@@ -64,7 +64,7 @@ public class PlayTracksScreen extends BaseMethods {
 	 */
 	public void pauseTrack() {
 		waitTime(500);
-		String pauseImage= getImageByName("Pause_button");
+		String pauseImage= getImageByName("PauseBtn_image");
 		click(pauseImage);
 		waitTime(1000);
 	}

@@ -14,9 +14,7 @@ public class BaseMethods {
     public static Pattern pattern;
     public static String HOMEPATH= System.getProperty("user.dir");
     public String imagerepo_folder= HOMEPATH+"\\src\\main\\resources\\ImageRepository\\";
-    protected UtilMethods utilObj =  new UtilMethods();
-	protected final String CONFIG= "Config.properties";
-	
+    
 		
 	public static Screen getScreen() {
 		if (screen==null) {
@@ -133,7 +131,7 @@ public class BaseMethods {
 	public void clearTextInTextField(String imageName) {
 		try {
 			screen.click(imageName);
-			waitTime(1000) ;
+			waitTime(500) ;
 			screen.type("a", KeyModifier.CTRL);
 			waitTime(500) ;
 			screen.type(Key.BACKSPACE);

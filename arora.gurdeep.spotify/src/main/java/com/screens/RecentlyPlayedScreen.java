@@ -17,10 +17,13 @@ public class RecentlyPlayedScreen extends BaseMethods {
 		waitTime(1000);
 		String recentTrackOption= getImageByName("RecentlyPlayed");	
 		String playTrack= getImageByName("PlayIcon");	
+		String pauseTrack= getImageByName("Pause_button");	
 		click(recentTrackOption);
 		waitTime(1000);
 		click(playTrack);
 		waitTime(3000);
+		click(pauseTrack);
+		waitTime(500);
 	}
 	
 	

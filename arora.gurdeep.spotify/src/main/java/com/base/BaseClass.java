@@ -17,7 +17,7 @@ public class BaseClass extends BaseMethods {
 		enter_text(searchImage, "Spotify");
 		waitTime(700);
 		pressEnter();
-		waitTime(1000);
+		waitTime(700);
 	}
 	
 	
